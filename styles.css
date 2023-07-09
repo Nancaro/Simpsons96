@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Simpsons Treehouse of Horror";
+  src: url("assets/Fonts/simpsons_treehouse_of_horror/Simpsons\ Treehouse\ of\ Horror.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: 'TT Norms Pro Regular';
+  src: url('assets/Fonts/TT-Norms®-Pro/Demo_Fonts/Fontspring-DEMO-tt_norms_pro_regular.otf');
+}
+
+@font-face {
+  font-family: 'TT Norms Pro Medium';
+  src: url('assets/Fonts/TT-Norms®-Pro/Demo_Fonts/Fontspring-DEMO-tt_norms_pro_medium.otf');
+}
+
+.text-container {
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-size: 1em; /* Tamaño de fuente ajustado a 1em */
+  text-align: center;
+}
+
+.page-title {
+  font-family: "Simpsons Treehouse of Horror", Arial, sans-serif;
+  text-align: center;
+  margin-left: -10px; /* Mover 10px a la izquierda */
+  margin-top: 50px; /* Mover 50px hacia abajo */
+  z-index: 9999; /* Asegurar que el título esté en la capa superior */
+  position: absolute; /* Posicionamiento absoluto */
+  top: 5px; /* Ajustar la posición vertical del título según tus necesidades */
+  left: 48%; /* Ajustar la posición horizontal del título según tus necesidades */
+  transform: translateX(-50%); /* Centrar horizontalmente el título */
+}
+.page-title .green-letter {
+  color: limegreen; /* Cambiar el color de la primera letra a verde */
+  font-size: 120px; 
+}
+
+.page-title .red-letter {
+  color: red; /* Cambiar el color de la segunda letra a rojo */
+  font-size: 70px; 
+}
+
+body {
+  background-color: black; /* color de fondo de la página */
+}
+
+.HugoS {
+  position: absolute;
+  top: 580px;
+  left: 70px;
+  z-index: 3;
+  display: block;
+  width: 12%; /* reducir el tamaño de la imagen del personaje al 50% */
+  height: 350px; /* ajusta la altura según tus necesidades */
+  margin-bottom: 100px;
+  cursor:auto; /* Cambia el cursor a una mano */
+}
+
+#hugo-message-container {
+  position: absolute;
+  top: 250px; /* Ajusta la posición vertical del mensaje según tus necesidades */
+  left: 1%; /* Ajusta la posición horizontal del mensaje según tus necesidades */
+  z-index: 2;
+}
+
+#hugo-message-container img {
+  display: block;
+  width: 650px; /* Ajusta el ancho del mensaje según tus necesidades */
+  height: auto; /* Ajusta la altura del mensaje según tus necesidades */
+  z-index: 2;
+}
+
+.item {
+  margin-bottom: 10px;
+}
+
+.background-image {
+  width: 86%;
+  height: 74%;
+  position: relative;
+}
+
+.sidebar {
+  background-color: #FFFFFF; /* color de fondo de la barra lateral */
+  width: 100px; /* ajusta el ancho de la barra lateral según tus necesidades */
+  height: 100%; /* ajusta la altura de la barra lateral según tus necesidades */
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  padding: 10px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #000000; /* color del texto de los enlaces */
+}
+
+.content {
+  margin-left: 100px; /* ajusta el margen izquierdo para dejar espacio para la barra lateral */
+  /* Agrega otros estilos o ajustes según el contenido de la página */
+}
+.cloud-image {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  z-index: 2;
+  width: 30%; /* Reducir el tamaño de las imágenes de las nubes al 50% */
+}
+
+.cloud-image2 {
+  position: absolute;
+  top: 50px;
+  right: 250px;
+  z-index: 2;
+  width: 30%; /* Reducir el tamaño de las imágenes de las nubes al 50% */
+}
+
+.cloud-image3 {
+  position: absolute;
+  top: 130px;
+  right: 450px;
+  z-index: 2;
+  width: 30%; /* Reducir el tamaño de las imágenes de las nubes al 50% */
+}
+
+.cloud-image4 {
+  position: absolute;
+  top: 110px;
+  left: 350px;
+  z-index: 2;
+  width: 30%; /* Reducir el tamaño de las imágenes de las nubes al 50% */
+}
+.background-image img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+#lightning {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 1500px;
+  background-image: url('assets/rayo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none; 
+}
+
+#thunder-audio {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 200px;
+  background-position: center;
+  z-index: 1;
+}
+
+@keyframes lightningFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .HugoS {
+    top: 300px; /* Ajusta este valor para mover la imagen en pantallas pequeñas */
+    width: 50%; /* Ajusta el tamaño de la imagen en pantallas pequeñas */
+    height: auto; /* Ajusta la altura automática en pantallas pequeñas */
+    margin-bottom: 50px; /* Ajusta el margen inferior en pantallas pequeñas */
+  }
+
+  .background-image {
+    width: 100%; /* Ajusta el ancho de la imagen de fondo en pantallas pequeñas */
+    height: auto; /* Ajusta la altura automática de la imagen de fondo en pantallas pequeñas */
+  }
+
+  .sidebar {
+    width: 50px; /* Ajusta el ancho de la barra lateral en pantallas pequeñas */
+  }
+}
+
+
+.green-link {
+  color: #00FF00; /* Color verde radiactivo */
+}
+
+.white-text {
+  color: white; /* Color blanco */
+}
+.radioactive-link {
+  color: lime; /* Color verde radiactivo */
+}
+
+.centered-justified {
+  text-align: center;
+  text-align: justify;
+  font-family: "TT Norms Pro Medium", sans-serif; /* Aplicar la fuente TT Norms Pro Medium */
+  font-size: 20px; /* Tamaño de fuente ajustado a 1em */
+  margin-left: 450px; /* Espacio negro en el lado izquierdo */
+  margin-right: 500px; /* Espacio negro en el lado derecho */
+  background-color: black; /* Color de fondo negro */
+  color: white; /* Color de texto blanco */
+  padding: 20px; /* Espacio interno */
+}
+
+.sidebar-right {
+  background-color: #FFFFFF; /* color de fondo de la barra lateral */
+  width: 100px; /* ajusta el ancho de la barra lateral según tus necesidades */
+  height: 100%; /* ajusta la altura de la barra lateral según tus necesidades */
+  position: fixed;
+  right: 0; /* posiciona la barra lateral a la derecha */
+  top: 0;
+}
+
+.sidebar-right img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+.live-img {
+  width: 86px;
+  height: 86px;
+}
+
+#copy{
+   font-family: "TT Norms Pro", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  text-align: justify;
+  margin-left: 250px; /* Espacio negro en el lado izquierdo */
+  margin-right: 200px;
+  padding: 20px;
+}

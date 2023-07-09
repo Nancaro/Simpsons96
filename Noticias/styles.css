@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'TT Norms Pro Regular';
+  src: url('../assets/Fonts/TT-Norms®-Pro/Demo_Fonts/Fontspring-DEMO-tt_norms_pro_regular.otf');
+}
+
+@font-face {
+  font-family: 'TT Norms Pro Medium';
+  src: url('../assets/Fonts/TT-Norms®-Pro/Demo_Fonts/Fontspring-DEMO-tt_norms_pro_medium.otf');
+}
+
+body {
+  font-family: "TT Norms Pro Medium", sans-serif; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(240, 250, 255);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 20px;
+}
+
+#star-img {
+  display: block;
+  margin: 0 auto;
+  width: 93px;
+  height: 83px;
+}
+
+.sidebar {
+  background-color: #FFFFFF;
+  width: 100px;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  padding: 10px;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.content {
+  margin-left: 100px;
+}
+
+.sidebar-right {
+  background-color: #FFFFFF;
+  width: 100px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.sidebar-right img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
+
+.live-img {
+  width: 86px;
+  height: 86px;
+}
+
+#Snews {
+  display: block;
+  margin: 0 auto;
+}
+.text-container {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-family: "TT Norms Pro Medium";
+  font-size: 16px;
+  line-height: 1.5;
+  margin-left: 70px; /* Espacio negro en el lado izquierdo */
+  margin-right: 150px;
+  padding: 0px;
+}
+
+.banner {
+  width: 100%;
+  height: 107px;
+  background-image: url("../assets/bgsimp.gif");
+  background-repeat: repeat-x;
+  background-size: 194px 107px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.banner h2 {
+  display: flex;
+  align-items: center;
+}
+
+.banner img {
+  margin-right: 10px;
+}
+
+#copy{
+  font-size: 10px;
+  text-align: center;
+}
